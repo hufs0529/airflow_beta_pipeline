@@ -92,4 +92,5 @@ with DAG('schedule', start_date=datetime(2022, 11, 1),
         python_callable=_store_review
     )
  
-    create_table  >> FileSensor >> process_review >> store_review >> creating_reviewtable >> review_processing
+    create_table  >> is_review_currencies_file_available >> process_review >> store_review >> saving_review 
+    saving_review >> creating_reviewtable >> review_processing
