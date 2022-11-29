@@ -11,7 +11,8 @@ https://github.com/hufs0529/project_bigdata  ![치킨 222](https://user-images.g
 > > > 나중에 이 데이터로 모델의 정확도를 높일 수 있게 데이터를 제공해줄 수 있는 모델에게 제공
 
 ## Airflow Scheduling
-####  create_table  >> FileSensor >> process_review >> store_review >> saving_review >> creating_reviewtable >> review_processing 
+####  create_table  >> is_review_currencies_file_available >> process_review >> store_review >> saving_review 
+####  saving_review >> creating_reviewtable >> review_processing
 
 1. create_table - postgres db Table 생성
 2. FileSensor - 파일 유무 확인
